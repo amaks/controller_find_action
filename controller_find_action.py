@@ -21,6 +21,3 @@ class ControllerFindActionCommand(sublime_plugin.TextCommand):
     action_def   = self.view.find('def ' + self.actions[index], 0)
     line, column = self.view.rowcol(action_def.begin())
     self.view.run_command("goto_line", {"line": line + 2} )
-
-
-
